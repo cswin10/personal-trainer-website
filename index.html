@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charlie Swinhoe - Personal Trainer Website</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Personalized fitness coaching with Charlie Swinhoe. Achieve your health and fitness goals through tailored programes and expert guidance">
+    <meta name="keywords" content="Personal Trainer, Fitness, Coaching, Health, Wellness">
+    <meta name="author" content="Charlie Swinhoe">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Charlie Swinhoe - Personal Trainer">
+    <meta property="og:description" content="Charlie Swinhoe - Personal Trainer offering personalized fitness programs and coaching.">
+    <meta property="og:image" content="path/to/social-media-image.jpg">
+    <meta property="og:url" content="https://www.charlieswinhoe.com">
+    <meta property="og:type" content="website">
+    
+      <!-- Favicon Links -->
+	  <link rel="icon" href="favicon-32x32.png" sizes="32x32">
+	  <link rel="icon" href="favicon-16x16.png" sizes="16x16">
+	  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	  <link rel="manifest" href="site.webmanifest">
+	  
+	  <!-- Preconnect -->
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  
+	  <!-- Preload Critical CSS -->
+	  <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:wght@400;700&display=swap" as="style">
+	  
+	  <!-- CSS Files -->
+	  <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	  
+	  <!-- Defer Non-Critical JavaScript -->
+	  <script src="script.js" defer></script>
+  </head>
+	<body>
+		<header>
+			<nav role="navigation">
+				<div class="image-container">
+					<a href="index.html">
+						<img
+							src="Charlie Swinhoe.png"
+							alt="Charlie Swinhoe Personal Trainer Card"
+						/>
+					</a>
+				</div>
+				<div class="hamburger" aria-label="menu">☰</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="hero-section">
+			<div class="image-container">
+				<img
+					src="hero-image.jpg"
+					alt="Background image of a gym and someone using battle ropes"
+				/>
+			</div>
+			<div class="hero-text">
+				<h1>Transform Your Life With Expert Personal Training.</h1>
+				<p>
+					Achieve your fitness goals with tailored plans and dedicated support.
+					Let's make it happen!
+				</p>
+				<a href="services.html"><button class="cta-button">Get started today!</button></a>
+			</div>
+		</div>
+		<div class="about-section section">
+			<article>
+				<h2>My Story</h2>
+				<p>
+					I have dedicated myself to transforming my body and pushing my limits,
+					developing a deep passion for fitness along the way. With years of
+					experience in resistance training, cardio, and a commitment to
+					personal growth, I understand the discipline and mindset required to
+					achieve true results. Whether you're looking to increase strength,
+					improve endurance, or lose body fat, I tailor every program to meet
+					your unique needs and goals. Having experienced the challenges of
+					pushing through injuries and setbacks, I know how to work around
+					limitations to keep you progressing safely and effectively. As a
+					passionate advocate for balanced fitness, my approach integrates
+					strength training, endurance, and recovery, ensuring a holistic and
+					sustainable transformation. Let me guide you through your fitness
+					journey with expert coaching and personalized support—together, we'll
+					make your goals a reality.
+				</p>
+				<h4>
+					Find out more about how I can help you reach your goals with a free
+					consultation
+				</h4>
+				<a href="contact.html"><button class="ripple">Enquire now!</button></a>
+			</article>
+		</div>
+		<div class="image-carousel section">
+			<div
+				class="panel active"
+				style="
+					background-image: url('images/image1\ \(1\).jpg');
+				"
+				alt="John performing back squats"
+			>
+				<h3>John performing back squats</h3>
+			</div>
+			<div
+				class="panel"
+				style="
+					background-image: url('images/image1\ \(2\).jpg');
+				"
+				alt="Mike with a seated overhead press"
+				loading="lazy"
+			>
+				<h3>Mike with a seated overhead press</h3>
+			</div>
+			<div
+				class="panel"
+				style="
+					background-image: url('images/image1\ \(3\).jpg');
+				"
+				alt="Hannah displaying perfect deadlift form"
+				loading="lazy"
+			>
+				<h3>Hannah displaying perfect deadlift form</h3>
+			</div>
+			<div
+				class="panel"
+				style="
+					background-image: url('images/image1\ \(4\).jpg');
+				"
+				alt="Paul pushing the sled"
+				loading="lazy"
+			>
+				<h3>Paul pushing the sled</h3>
+			</div>
+			<div
+				class="panel"
+				style="
+					background-image: url('images/image1\ \(5\).jpg');
+				"
+				alt="Alfie preparing to do hang cleans"
+				loading="lazy"
+			>
+				<h3>Alfie preparing to do hang cleans</h3>
+			</div>
+		</div>
+		<div class="testimonials-section section">
+			<h2>What Our Clients Say</h2>
+			<div class="testimonials-container">
+			  <div class="testimonial" id="testimonial1">
+				<p>"This is an amazing service! It changed my life." - John Doe</p>
+			  </div>
+			  <div class="testimonial" id="testimonial2">
+				<p>"A fantastic experience, I highly recommend it!" - Jane Smith</p>
+			  </div>
+			  <div class="testimonial" id="testimonial3">
+				<p>"Great quality and customer support. Will use again!" - Sarah Lee</p>
+			  </div>
+			  <div class="testimonial" id="testimonial4">
+				<p>"Exceeded my expectations, a must-try!" - David Brown</p>
+			  </div>
+			</div>
+		  
+			<div class="testimonial-arrows">
+			  <div class="arrow" id="left-arrow">←</div>
+			  <div class="arrow" id="right-arrow">→</div>
+			</div>
+		  </div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-content">
+				<!-- Social Media Links -->
+				<div class="social-media">
+					<a
+						href="https://facebook.com"
+						target="_blank"
+						class="social-icon facebook"
+						aria-label="Link to Facebook"
+						rel="noopener noreferrer"
+					><i class="fab fa-facebook"></i></a>
+					<a
+						href="https://instagram.com"
+						target="_blank"
+						class="social-icon instagram"
+						aria-label="Link to Instagram"
+						rel="noopener noreferrer"
+					><i class="fab fa-instagram"></i></a>
+					<a
+						href="https://twitter.com"
+						target="_blank"
+						class="social-icon twitter"
+						aria-label="Link to Twitter"
+						rel="noopener noreferrer"
+					><i class="fab fa-twitter"></i></a>
+					<a
+						href="https://linkedin.com"
+						target="_blank"
+						class="social-icon linkedin"
+						aria-label="Link to LinkedIn"
+						rel="noopener noreferrer"
+					><i class="fab fa-linkedin"></i></a>
+				</div>
+		
+				<!-- Contact Info -->
+				<div class="contact-info">
+					<p>Email: <a href="mailto:charlie@personaltrainer.com">charlie@personaltrainer.com</a></p>
+					<p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+				</div>
+		
+				<!-- Copyright Section -->
+				<div class="copyright">
+					<p>&copy; 2025 Charlie Swinhoe Personal Trainer. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<button id="scrollToTop" style="display: none;"> <i class="fa-solid fa-arrow-up"></i>TOP</button>
+		<script src="script.js" defer></script>
+	</body>
+</html>
