@@ -4,6 +4,15 @@
 	margin: 0
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
 :root {
 	--red: hsl(0, 100%, 74%)
 }
@@ -13,14 +22,6 @@ html {
 	overflow-x: hidden
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	width: 100vw;
-	background-color: black;
-	font-family: 'Montserrat', sans-serif
-}
 
 /* .section {
 	opacity: 0;
@@ -50,11 +51,14 @@ nav {
 	display: none;
 	margin: 10px 20px;
 	font-weight: 700;
-	font-size: 1.8rem
+	font-size: 1.8rem;
+	transition: 0.2s ease-in-out all;
 }
 
 .hamburger:hover {
-	cursor: pointer
+	cursor: pointer;
+	color: var(--red);
+	transform: scale(1.05);
 }
 
 nav .image-container {
@@ -252,7 +256,7 @@ nav ul li a:hover {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 70vh;
+	height: 500px;
 	border-radius: 50px;
 	color: #fff;
 	cursor: pointer;
@@ -260,7 +264,7 @@ nav ul li a:hover {
 	margin: 10px;
 	position: relative;
 	-webkit-transition: all 500ms ease-in;
-	will-change: transform
+	will-change: transform;
 }
 
 .panel h3 {
@@ -273,7 +277,7 @@ nav ul li a:hover {
 }
 
 .panel.active {
-	flex: 5
+	flex: 5;
 }
 
 .panel.active h3 {
@@ -679,7 +683,7 @@ form#contact-form .submit-button:hover {
 		padding: 20px;
 		z-index: 1000;
 		border-radius: 20px;
-		gap: 10px
+		gap: 30px
 	}
 
 	nav ul.active {
@@ -712,12 +716,34 @@ form#contact-form .submit-button:hover {
 		transform: translateY(0)
 	}
 	.testimonials-section h2 {
-		font-size: 2rem
+		font-size: 1.6rem
 	}
 
 	.arrow {
 		margin-bottom: 50px;
 	}
+	.panel {
+        background-size: cover; /* Adjust background size to contain */
+        background-position: center center; /* Center the background image */
+        height: 300px; /* Adjust height for smaller screens */
+    }
+	.panel h3 {
+		font-size: 18px
+	}
+	.testimonials-container {
+		padding: 0 10px;
+		margin: 20px;
+	}
+
+	.services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        flex: 1 1 80%; /* Take up most of the width of the screen */
+        margin: 10px 0; /* Add vertical spacing between cards */
+    }
 }
 
 @media(max-width:480px) {
@@ -725,10 +751,7 @@ form#contact-form .submit-button:hover {
 		width: 100vw
 	}
 
-	.panel:nth-of-type(4),
-	.panel:nth-of-type(5) {
-		display: none
-	}
+
 }
 
 @keyframes fadeInUp {
